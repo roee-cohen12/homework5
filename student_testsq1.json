@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "name": "Check Descending Sort in Single Platform",
+      "input": "4 10 40 20 30 1 1 1 1",
+      "output": "40 30 20 10\n1 1 1 1"
+    },
+    {
+      "name": "Mixed Platforms with Tie in Popularity",
+      "input": "3 50 50 50 2 0 1",
+      "output": "50 50 50\n0 1 2"
+    },
+    {
+      "name": "All Platforms and Reverse Order",
+      "input": "6 10 90 20 80 30 70 2 0 1 2 0 1",
+      "output": "90 30 70 20 80 10\n0 0 1 1 2 2"
+    },
+    {
+      "name": "Handling Edge Values (0 and 100)",
+      "input": "4 0 100 0 100 2 0 2 0",
+      "output": "100 100 0 0\n0 0 2 2"
+    },
+    {
+      "name": "Single Capybara",
+      "input": "1 75 1",
+      "output": "75\n1"
+    },
+    {
+      "name": "Already Sorted Input",
+      "input": "3 90 80 70 0 0 0",
+      "output": "90 80 70\n0 0 0"
+    },
+    {
+      "name": "Unsorted Platforms with Same Popularity",
+      "input": "3 50 50 50 2 1 0",
+      "output": "50 50 50\n0 1 2"
+    },
+    {
+      "name": "Interleaved Platforms and Popularity",
+      "input": "4 10 20 10 20 1 0 1 0",
+      "output": "20 20 10 10\n0 0 1 1"
+    },
+    {
+      "name": "Platform Sorting Priority",
+      "input": "3 100 10 50 1 0 2",
+      "output": "10 100 50\n0 1 2"
+    },
+    {
+      "name": "Multiple Popularity Ties within Platform",
+      "input": "4 50 50 60 40 0 0 0 0",
+      "output": "60 50 50 40\n0 0 0 0"
+    },
+    {
+      "name": "Two Capybaras Swapped",
+      "input": "2 10 90 1 0",
+      "output": "90 10\n0 1"
+    },
+    {
+      "name": "Complex Multi-Platform Mix",
+      "input": "5 10 50 20 40 30 0 1 0 1 2",
+      "output": "20 10 50 40 30\n0 0 1 1 2"
+    }
+  ]
+}
